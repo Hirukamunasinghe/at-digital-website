@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --at-primary-color: #6B3CC9;
+  --at-secondary-color: #F28D35;
+  --at-analogous-1-color: #6A44F2;
+  --at-analogous-2-color: #1CBDDD;
+
+  /* gardients */
+  --at-bg-gradient: linear-gradient(45deg, rgba(28,189,221,1) 0%, rgba(77,202,121,1) 100%);
+}
