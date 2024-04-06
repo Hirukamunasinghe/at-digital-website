@@ -27,8 +27,8 @@ const Header = () => {
       <nav className='flex items-center px-[20px] py-[26px] justify-between bg-primary text-white h-[auto]'>
         <div className="flex items-center">
           <img className='h-[30px]' src='./assets/atlogo.png' alt='Logo'/>
-          {windowWidth < 768 && showLinks && ( // Conditionally render links below the logo
-            <ul className='flex flex-col items-left text-lg mt-2 ml-4'> {/* Adjusted margin left for links */}
+          {windowWidth < 768 && showLinks && (
+            <ul className='flex flex-col position: absolute '> 
               <li><a href=''>SERVICES</a></li>
               <li><a href=''>ABOUT US</a></li>
               <li><a href=''>CONTACT US</a></li>
