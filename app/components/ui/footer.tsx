@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Top section */}
       <div className="topdiv lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-700px lg:pt-[30px] lg:pr-[60px] lg:pl-[60px] xl:flex xl:justify-between">
         {/* logo with the description */}
-        <div className="md:pl-4 md:pt-[40px] lg:w-[438px] md:w-[413px] lg:pl-[0px] pl-[20px] xl:pl-[60px]">
+        <div className="md:pl-4 md:pt-[40px] lg:w-[438px] md:w-[413px] lg:pl-[0px] pl-[20px] xl:pl-[60px] sm:pt-[10px]">
           <Image src="/assets/atlogo.png" alt="Logo" width={250} height={250}/>
           <p className="font-regular text-sm mt-2 pt-[20px]">
             Your goal is our target. Not anything in between. We use online
@@ -41,10 +41,12 @@ const Footer = () => {
       </div>
       {/* Privacy div */}
       <div className="privacydiv flex flex-col gap-2 items-center py-6 pb-[10px]">
-        <img
+        <Image
           className="md:w-[630px]"
-          src="./assets/footerline.png"
+          src="/assets/footerline.png"
           alt="Footer Line"
+          height={10}
+          width={300}
         />
         <div className="flex items-center gap-2 justify-center">
           <p className="text-sm">Privacy Policy | Terms & Conditions</p>
