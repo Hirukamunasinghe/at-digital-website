@@ -1,5 +1,6 @@
 // use client
 "use client"; 
+// import react and useeffect hook
 import React, { useState, useEffect } from 'react';
 
 // header component with use state
