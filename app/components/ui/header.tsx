@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showLinks, setShowLinks] = useState(false); // State to handle link visibility in mobile
+  const [showLinks, setShowLinks] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,11 +24,11 @@ const Header = () => {
 
   return (
     <div className='navbarDiv'>
-      <nav className='flex items-center px-[20px] py-[26px] justify-between bg-primary text-white h-[auto]'>
+      <nav className={`flex items-center px-[20px] py-[26px] justify-between bg-primary text-white h-[auto] ${showLinks && windowWidth < 768 ? 'h-[auto]' : ''}`}>
         <div className="flex items-center">
           <img className='h-[30px]' src='./assets/atlogo.png' alt='Logo'/>
-          {windowWidth < 768 && showLinks && (
-            <ul className='flex flex-col position: absolute '> 
+          {(windowWidth < 768 && showLinks) && (
+            <ul className='flex flex-col position: absolute'> 
               <li><a href=''>SERVICES</a></li>
               <li><a href=''>ABOUT US</a></li>
               <li><a href=''>CONTACT US</a></li>
