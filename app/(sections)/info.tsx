@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "../components/ui/button";
 
-
+// info component
 const Info = () => {
   return (
     <div className=" w-full py-[60px] px-5 flex flex-col gap-[60px] md:px-10">
