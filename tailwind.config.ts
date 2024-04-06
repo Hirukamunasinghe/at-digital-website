@@ -18,6 +18,8 @@ const config: Config = {
         secondary: "var(--at-secondary-color)",
         "analogous-10": "var(--at-analogous-1-color)",
         "analogous-20": "var(--at-analogous-2-color)",
+        "light-10": "var(--at-light-color)",
+        "med-10":"var(--at-medium-color)"
       },
       backgroundImage: {
         "hero-pattern": "url('/assets/hero-image.png')",

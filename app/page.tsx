@@ -1,5 +1,6 @@
 import Hero from "./(sections)/hero";
 import Info from "./(sections)/info";
+import Footer from "./components/ui/footer";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Hero />
       <Info />
+      <Footer></Footer>
     </main>
     </>
   );
