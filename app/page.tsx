@@ -1,3 +1,4 @@
+// importing the sections and components
 import Hero from "./(sections)/hero";
 import Info from "./(sections)/info";
 import Footer from "./components/ui/footer";
