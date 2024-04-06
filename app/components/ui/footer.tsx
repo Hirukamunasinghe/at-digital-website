@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <div className='flex flex-col bg-primary text-white'>
       {/* Top section */}
-      <div className='topdiv lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[950px] lg:pt-[40px] lg:pr-[60px] lg:pl-[60px]'>
-        <div className='md:pl-4 lg:w-[438px] md:w-[413px] pl-[20px]'>
+      <div className='topdiv lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-600px lg:pt-[40px] lg:pr-[60px] lg:pl-[60px] xl:flex xl:justify-between'>
+        <div className='md:pl-4 lg:w-[438px] md:w-[413px] pl-[20px] xl:pl-[60px]'>
           <img className='' src='./assets/atlogo.png' alt='Logo' />
           <p className='font-regular text-sm mt-2 pt-[20px]'>
             Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.
           </p>
         </div>
-        <div className='md:flex md:flex-row md:gap-[70px]'>
+        <div className='md:flex md:flex-row md:gap-[70px] xl:pr-[90px]'>
         <div className='pt-8 px-4 md:pt-0 lg:pr-[40px] pl-[20px]'>
           <h2 className='font-semibold text-[21px]'>Our Technologies</h2>
           <div className='pt-2 flex flex-col gap-2 font-medium '>
