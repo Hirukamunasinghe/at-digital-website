@@ -2,6 +2,7 @@
 "use client"; 
 // import react and useeffect hook
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
 
 // header component with use state
 const Header = () => {
@@ -37,7 +38,7 @@ const Header = () => {
     <div className='navbarDiv'>
       <nav className={`flex items-center px-[20px] py-[26px] justify-between bg-primary text-white h-[${navbarHeight}] ${showLinks && windowWidth < 768 ? '' : ''}`}>
         <div className="flex items-center">
-          <img className='h-[30px] cursor-pointer' src='./assets/atlogo.png' alt='Logo'/>
+          <Image className='cursor-pointer' src='/assets/atlogo.png' alt='Logo' width={200} height={200}/>
           {/* checking whether the window width is less than 768px to show the navbar links */}
           {(windowWidth < 768 && showLinks) && (
             <ul className='flex flex-col gap-[30px] pl-[20px]  position: absolute left-0 mt-[255px] w-full bg-primary'> 
@@ -59,10 +60,10 @@ const Header = () => {
             </ul>
           ) : (
             toggleActive ? (
-              <img className='h-[25px]' onClick={toggleLinks} src='./assets/close.png' alt='Cross'/>
+              <Image className='h-[25px]' onClick={toggleLinks} src='/assets/close.png' alt='Cross' width={30} height={40}/>
             ) : ( 
               // else the toggle image will be displayed 
-              <img onClick={toggleLinks} src='./assets/toggle.png' alt='Toggle'/>
+              <Image onClick={toggleLinks} src='/assets/toggle.png' alt='Toggle'  width={30} height={30}/>
             )
           )}
         </div>

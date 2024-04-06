@@ -89,9 +89,9 @@ const Info = () => {
                   sed aliquam. Sapien massa morbi risus sagittis tortor integer.
                 </p>
               </div>
-              <img
+              <Image
                 className="py-[12px] pb-[7px] text-[18px] cursor-pointer"
-                src="./assets/minus.png"
+                src="/assets/minus.png" alt="image" width={13} height={13}
               />
             </div>
           </div>
@@ -102,9 +102,10 @@ const Info = () => {
                 Lorem ipsum dolor sit amet consectetur. Tortor scelerisque
                 integer?
               </h3>
-              <img
+              <Image
                 className="py-[8px] cursor-pointer"
-                src="./assets/plus.png"
+                src="/assets/plus.png" alt="image"
+                width={13} height={13}
               />
             </div>
           </div>
@@ -115,9 +116,11 @@ const Info = () => {
                 Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque
                 nunc?
               </h3>
-              <img
+              <Image
                 className="py-[8px] cursor-pointer"
-                src="./assets/plus.png"
+                src="/assets/plus.png"
+                alt="image"
+                width={13} height={13}
               />
             </div>
           </div>
