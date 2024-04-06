@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="flex flex-col bg-primary text-white">
       {/* Top section */}
       <div className="topdiv lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-700px lg:pt-[30px] lg:pr-[60px] lg:pl-[60px] xl:flex xl:justify-between">
-        {/* logo with the description */}
+        {/* Logo with the description */}
         <div className="md:pl-4 md:pt-[40px] lg:w-[438px] md:w-[413px] lg:pl-[0px] pl-[20px] xl:pl-[60px] sm:pt-[10px]">
           <Image src="/assets/atlogo.png" alt="Logo" width={250} height={250}/>
           <p className="font-regular text-sm mt-2 pt-[20px]">
